@@ -3,9 +3,11 @@ package com.nickz.aopdemo.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
+@EqualsAndHashCode(exclude = "user")
 @Table(name = "orders")
 public class Order {
 

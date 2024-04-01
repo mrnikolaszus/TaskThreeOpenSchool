@@ -3,6 +3,7 @@ package com.nickz.aopdemo.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -11,6 +12,7 @@ import java.util.Set;
 
 @Data
 @Entity
+@EqualsAndHashCode(exclude = "orders")
 @Table(name = "users")
 public class User {
 
